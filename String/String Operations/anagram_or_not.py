@@ -1,6 +1,5 @@
 # 🧠 When to Use What?
 # ✅ Use sort() → When you want to modify the list in-place
-
 # ✅ Use sorted() → When you want to keep the original data and get a new sorted version
 
 list1 = ['a', 'n', 'a']

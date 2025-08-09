@@ -22,4 +22,4 @@ def reverse_string2(s):
         return reverse_string2(s[1:]) + s[0]
     
 # Test the function
-print(reverse_string2("Ankush"))  # Output: "hsuknA"
+print(reverse_string2("Ankush is M.Tech student"))  # Output: "hsuknA"

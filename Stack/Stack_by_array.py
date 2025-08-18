@@ -13,7 +13,9 @@ class Stack:
 
     def pop(self):
         if self.top >= 0:
+            popped = self.arr[self.top]
             self.top -= 1
+            return popped
         else:
             print("Stack UnderFlow")
 
@@ -37,7 +39,8 @@ st.push(22)
 st.push(44)   # This will print "Stack OverFlow"
 print(st.arr)
 print(st.peek())
-st.pop()
+# st.pop()
+print("the pop element ",st.pop())
 print(st.peek())
 st.pop()
 print(st.peek())

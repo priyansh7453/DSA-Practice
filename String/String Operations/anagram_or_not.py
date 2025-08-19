@@ -13,15 +13,16 @@ print(arr)      # Original remains: [3, 1, 4, 2]
 
 #             <--------------------------------->
 
-def is_anagram(s1,s2):
+def is_anagram(st1,st2):
+    s1 = st1.lower()
+    s2 = st2.lower()
     if len(s1) == len(s2):
-        return True
-    elif sorted(s1)==sorted(s2):
-        return True
-    else:
-        return False
+        if sorted(s1)==sorted(s2):
+            return True
+        else:
+            return False
 
 
-s1 = "ana"
-s2 = "aab"  
+s1 = "anA"
+s2 = "aaN"  
 print(is_anagram(s1,s2))
